@@ -29,9 +29,17 @@ body {
 body {
   font-family: 'Work Sans', sans-serif;
   background-color: $backgroundColor;
+  color: #fff;
   position: relative;
 
   &._lock {
     overflow: hidden;
   }
+}
+
+.text {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: $textColor;
 }
