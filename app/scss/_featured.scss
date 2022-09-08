@@ -1,0 +1,21 @@
+.featured {
+  margin: clamp(6rem, 4.473rem + 7.64vw, 11.25rem) auto;
+  &__title {
+    @media (max-width: 460px) {
+      text-align: center;
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-top: clamp(1.9rem, 1.493rem + 2.04vw, 3.3rem);
+    overflow: auto;
+  }
+
+  &__item {
+    flex: 0 0 auto;
+  }
+}

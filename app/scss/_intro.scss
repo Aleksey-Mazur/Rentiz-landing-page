@@ -1,11 +1,16 @@
 .intro {
   margin-top: clamp(1.25rem, 0.246rem + 5.02vw, 4.7rem);
+  position: relative;
 
   .intro-pattern {
     position: absolute;
     right: 0;
-    bottom: -15rem;
+    bottom: -11rem;
     z-index: -1;
+
+    @media (max-width: 576px) {
+      height: 18.8rem;
+    }
   }
 
   &__container {
@@ -150,7 +155,7 @@
   &__icon {
     height: 0.4rem;
     width: 0.6rem;
-    background: url('../images/arrow.svg') center bottom no-repeat;
+    background: url('../images/icons/arrow.svg') center bottom no-repeat;
     transition: transform 0.2s;
 
     &._active {

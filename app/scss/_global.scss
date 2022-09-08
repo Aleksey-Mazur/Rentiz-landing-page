@@ -16,10 +16,6 @@ body {
   flex: 0 0 auto;
 }
 
-* img {
-  max-width: 100%;
-}
-
 [class*='__container'] {
   max-width: 1420px;
   margin: 0 auto;
@@ -35,6 +31,14 @@ body {
   &._lock {
     overflow: hidden;
   }
+}
+
+.title {
+  font-weight: 600;
+  font-size: clamp(1.9rem, 1.58rem + 1.6vw, 3rem);
+  line-height: 1.25;
+  text-transform: capitalize;
+  color: #fff;
 }
 
 .text {
