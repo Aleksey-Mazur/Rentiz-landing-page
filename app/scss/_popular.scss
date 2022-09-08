@@ -1,0 +1,125 @@
+.popular {
+  background: #1a242f url(../images/slider/topography-bg.svg) center
+    center/cover no-repeat;
+  padding: clamp(2rem, -0.327rem + 11.64vw, 10rem) 0;
+
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: clamp(1.5rem, 1.209rem + 1.45vw, 2.5rem);
+
+    @media (max-width: 560px) {
+      text-align: center;
+    }
+  }
+
+  &__slider {
+    position: relative;
+  }
+}
+
+// ========== Slide element ==========
+
+.popular-slide {
+  display: flex;
+  flex-direction: column;
+  gap: 1.64rem;
+
+  @media (max-width: 660px) {
+    text-align: center;
+  }
+
+  &__thumb {
+    img {
+      @media (max-width: 660px) {
+        display: inline-flex;
+      }
+    }
+  }
+
+  &__text {
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 1.625rem;
+    line-height: 1.25;
+    letter-spacing: 0.01rem;
+    text-transform: capitalize;
+  }
+
+  &__desc {
+  }
+
+  &__labels {
+    display: flex;
+    gap: 1.25rem;
+
+    @media (max-width: 660px) {
+      justify-content: center;
+    }
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+}
+
+.swiper {
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: inline-flex;
+}
+
+.swiper-slide {
+}
+
+.slider-buttons {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1800px) {
+    top: -6rem;
+    right: 0;
+    width: auto;
+    gap: 2rem;
+  }
+
+  @media (max-width: 560px) {
+    display: none;
+  }
+}
+
+.swiper-button-prev {
+  position: absolute;
+  left: -8rem;
+}
+
+.swiper-button-next {
+  transform: rotate(180deg);
+  position: absolute;
+  right: -8rem;
+}
+
+.popular-slider-btn {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  background: url(../images/slider/slider-arrow-icon.svg) center center
+    no-repeat;
+  border: 1px solid #a9adb1;
+  cursor: pointer;
+
+  @media (max-width: 1800px) {
+    position: static;
+  }
+}
