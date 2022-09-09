@@ -1,0 +1,97 @@
+.reviews {
+  position: relative;
+  margin-bottom: clamp(6.25rem, 4.795rem + 7.27vw, 11.25rem);
+
+  .reviews-pattern {
+    position: absolute;
+    top: -32rem;
+    left: 0;
+    z-index: -1;
+  }
+
+  .swiper-wrapper {
+    align-items: flex-start;
+  }
+
+  &__container {
+    max-width: 1020px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 12.2rem;
+  }
+
+  &__quotes {
+    font-size: 16.25rem;
+    text-transform: capitalize;
+    color: $accentColor;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__slider {
+  }
+}
+
+.slider-reviews {
+  &__slide {
+  }
+
+  &__text {
+    font-size: clamp(1.25rem, 1.032rem + 1.09vw, 2rem);
+    line-height: 1.57;
+    margin-bottom: 2.5rem;
+  }
+
+  &__info {
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 1.38rem;
+    line-height: 1.26;
+    letter-spacing: 0.01rem;
+    text-transform: capitalize;
+  }
+
+  &__job {
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 4.3rem;
+    width: 7.2rem;
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+    align-items: center;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      background-color: #353f49;
+      width: 1px;
+      height: 3.75rem;
+    }
+  }
+}
+
+.slider-reviews-btn {
+  &.swiper-button-disabled {
+    svg {
+      fill: #767f89;
+    }
+  }
+
+  svg {
+    fill: #fff;
+  }
+}
+
+.slider-reviews-prev {
+  transform: translateY(-4px) rotate(180deg);
+}
+
+.slider-reviews-next {
+}
