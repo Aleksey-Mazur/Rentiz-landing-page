@@ -7,6 +7,10 @@
     top: -32rem;
     left: 0;
     z-index: -1;
+
+    @media (max-width: 475px) {
+      width: 18.7rem;
+    }
   }
 
   .swiper-wrapper {
@@ -78,6 +82,7 @@
 }
 
 .slider-reviews-btn {
+  cursor: pointer;
   &.swiper-button-disabled {
     svg {
       fill: #767f89;
