@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rentiz: Real Estate, Apartments, Mortgages & Home Values</title>
+    <link
+      rel="shortcut icon"
+      href="images/icons/icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <!-- ========== Header ========== -->
+    <header class="header">
+      <div class="header__container">
+        <a href="#" class="header__logo"
+          ><img src="images/logos/logo.svg" alt="Rentiz Logo"
+        /></a>
+        <div class="header__navigation">
+          <nav class="header__menu menu">
+            <ul class="menu__body">
+              <li class="menu__item"><a href="" class="menu__link">Home</a></li>
+              <li class="menu__item">
+                <a href="" class="menu__link">About Us</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Buying</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Renting</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Selling</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__buttons">
+            <button class="login header__btn">Login</button>
+            <button class="register header__btn">Sign Up</button>
+          </div>
+          <div class="menu-icon"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <main class="main page">
+        <!-- ========== Intro ========== -->
+        <section class="intro">
+          <div class="intro__container">
+            <div class="intro__content">
+              <h1 class="intro__title">Find homes first. Tour homes fast.</h1>
+              <p class="intro__text text">
+                Discover your perfect home with the most complete source of
+                homes for sale & real estate near you.
+              </p>
+              <div class="intro__filter filter">
+                <div class="filter__block block-filter">
+                  <div class="block-filter__button">
+                    <div class="block-filter__header">
+                      <div class="block-filter__type">Purpose</div>
+                      <div class="block-filter__icon"></div>
+                    </div>
+                    <div class="block-filter__value">Buy</div>
+                  </div>
+                  <div class="block-filter__dropdown">
+                    <div class="block-filter__item">Buy</div>
+                    <div class="block-filter__item">Sell</div>
+                  </div>
+                </div>
+                <div class="filter__block block-filter">
+                  <div class="block-filter__button">
+                    <div class="block-filter__header">
+                      <div class="block-filter__type">Location</div>
+                      <div class="block-filter__icon"></div>
+                    </div>
+                    <div class="block-filter__value">Los Angeles, USA</div>
+                  </div>
+                  <div class="block-filter__dropdown">
+                    <div class="block-filter__item">Los Angeles, USA</div>
+                    <div class="block-filter__item">Birmingham, England</div>
+                    <div class="block-filter__item">Toronto, Canada</div>
+                  </div>
+                </div>
+                <div class="filter__block block-filter">
+                  <div class="block-filter__button">
+                    <div class="block-filter__header">
+                      <div class="block-filter__type">Type</div>
+                      <div class="block-filter__icon"></div>
+                    </div>
+                    <div class="block-filter__value">Single-Family Home</div>
+                  </div>
+                  <div class="block-filter__dropdown">
+                    <div class="block-filter__item">Single-Family Home</div>
+                    <div class="block-filter__item">Condo</div>
+                    <div class="block-filter__item">Townhome</div>
+                    <div class="block-filter__item">Industrial Home</div>
+                  </div>
+                </div>
+                <div class="filter__btn">
+                  <button>Search</button>
+                </div>
+              </div>
+            </div>
+            <div class="intro__img">
+              <img src="images/photos/intro-img.jpg" alt="Intro Image" />
+            </div>
+          </div>
+          <img
+            class="intro-pattern"
+            src="images/logos/intro-pattern.svg"
+            alt="Intro Pattern"
+          />
+        </section>
+        <!-- ========== Featured ========== -->
+        <section class="featured section-reveal">
+          <div class="featured__container">
+            <h2 class="featured__title title">Featured In</h2>
+            <div class="featured__box">
+              <div class="featured__item">
+                <img src="images/logos/vin-tage.svg" alt="Vin-Tage" />
+              </div>
+              <div class="featured__item">
+                <img src="images/logos/violet.svg" alt="Violet" />
+              </div>
+              <div class="featured__item">
+                <img src="images/logos/ceathes.svg" alt="Ceathes" />
+              </div>
+              <div class="featured__item">
+                <img src="images/logos/creater-fav.svg" alt="Creater-Fav" />
+              </div>
+              <div class="featured__item">
+                <img
+                  src="images/logos/lavender-agency.svg"
+                  alt="Lavender-Agency"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ========== Popular ========== -->
+        <section class="popular section-reveal">
+          <div class="popular__container">
+            <h2 class="popular__title title">Popular Residence</h2>
+            <div class="popular__slider">
+              <div class="swiper popular-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide popular-slide">
+                    <div class="popular-slide__thumb">
+                      <img
+                        src="images/slider/aliva-priva-jalvin.jpg"
+                        alt="Aliva Priva"
+                      />
+                    </div>
+                    <div class="popular-slide__text">
+                      <h4 class="popular-slide__title">Aliva Priva Jalvin</h4>
+                      <div class="popular-slide__desc text">
+                        1087 Pin Oak Drive, Clinton, CA 90034
+                      </div>
+                    </div>
+                    <div class="popular-slide__labels">
+                      <div class="popular-slide__label">
+                        <img src="images/slider/bed-icon.svg" alt="Bed" />
+                        <span>4 Beds</span>
+                      </div>
+                      <div class="popular-slide__label">
+                        <img src="images/slider/bath-icon.svg" alt="Bath" />
+                        <span>4 Bath</span>
+                      </div>
+                      <div class="popular-slide__label">
+                        <img src="images/slider/square-icon.svg" alt="Square" />
+                        <span>1203 Sqft.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide popular-slide">
+                    <div class="popular-slide__thumb">
+                      <img
+                        src="images/slider/hard-line-orchar.jpg"
+                        alt="Hard Line Orchar"
+                      />
+                    </div>
+                    <div class="popular-slide__text">
+                      <h4 class="popular-slide__title">Hard Line Orchar</h4>
+                      <div class="popular-slide__desc text">
+                        6100 Alcove Ave, Valley Glen, CA 91606
+                      </div>
+                    </div>
+                    <div class="popular-slide__labels">
+                      <div class="popular-slide__label">
+                        <img src="images/slider/bed-icon.svg" alt="Bed" />
+                        <span>4 Beds</span>
+                      </div>
+                      <div class="popular-slide__label">
+                        <img src="images/slider/bath-icon.svg" alt="Bath" />
+                        <span>2 Bath</span>
+                      </div>
+                      <div class="popular-slide__label">
+                        <img src="images/slider/square-icon.svg" alt="Square" />
+                        <span>1100 Sqft.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide popular-slide">
+                    <div class="popular-slide__thumb">
+                      <img
+                        src="images/slider/allpine-lenevote.jpg"
+                        alt="Allpine Lenevote"
+                      />
+                    </div>
+                    <div class="popular-slide__text">
+                      <h4 class="popular-slide__title">Allpine Lenevote</h4>
+                      <div class="popular-slide__desc text">
+                        11718 Odessa Ave, Granada Hills, CA 91344
+                      </div>
+                    </div>
+                    <div class="popular-slide__labels">
+                      <div class="popular-slide__label">
+                        <img src="images/slider/bed-icon.svg" alt="Bed" />
+                        <span>2 Beds</span>
+                      </div>
+                      <div class="popular-slide__label">
+                        <img src="images/slider/bath-icon.svg" alt="Bath" />
+                        <span>2 Bath</span>
+                      </div>
+                      <div class="popular-slide__label">
+                        <img src="images/slider/square-icon.svg" alt="Square" />
+                        <span>878 Sqft.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide popular-slide">
+                    <div class="popular-slide__thumb">
+                      <img
+                        src="images/slider/carlton-way.jpg"
+                        alt="Carlton Way"
+                      />
+                    </div>
+                    <div class="popular-slide__text">
+                      <h4 class="popular-slide__title">Carlton Way</h4>
+                      <div class="popular-slide__desc text">
+                        6101 Shirley Ave, Tarzana, CA 91356
+                      </div>
+                    </div>
+                    <div class="popular-slide__labels">
+                      <div class="popular-slide__label">
+                        <img src="images/slider/bed-icon.svg" alt="Bed" />
+                        <span>3 Beds</span>
+                      </div>
+                      <div class="popular-slide__label">
+                        <img src="images/slider/bath-icon.svg" alt="Bath" />
+                        <span>2 Bath</span>
+                      </div>
+                      <div class="popular-slide__label">
+                        <img src="images/slider/square-icon.svg" alt="Square" />
+                        <span>1486 Sqft.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide popular-slide">
+                    <div class="popular-slide__thumb">
+                      <img
+                        src="images/slider/natoma-ave.jpg"
+                        alt="Natoma Ave"
+                      />
+                    </div>
+                    <div class="popular-slide__text">
+                      <h4 class="popular-slide__title">Natoma Ave</h4>
+                      <div class="popular-slide__desc text">
+                        6549 Buffalo Ave, Valley Glen, CA 91401
+                      </div>
+                    </div>
+                    <div class="popular-slide__labels">
+                      <div class="popular-slide__label">
+                        <img src="images/slider/bed-icon.svg" alt="Bed" />
+                        <span>4 Beds</span>
+                      </div>
+                      <div class="popular-slide__label">
+                        <img src="images/slider/bath-icon.svg" alt="Bath" />
+                        <span>2 Bath</span>
+                      </div>
+                      <div class="popular-slide__label">
+                        <img src="images/slider/square-icon.svg" alt="Square" />
+                        <span>1798 Sqft.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide popular-slide">
+                    <div class="popular-slide__thumb">
+                      <img
+                        src="images/slider/oakford-ln.jpg"
+                        alt="Oakford Ln"
+                      />
+                    </div>
+                    <div class="popular-slide__text">
+                      <h4 class="popular-slide__title">Oakford Ln</h4>
+                      <div class="popular-slide__desc text">
+                        713 W 165th Pl, Gardena, CA 90247
+                      </div>
+                    </div>
+                    <div class="popular-slide__labels">
+                      <div class="popular-slide__label">
+                        <img src="images/slider/bed-icon.svg" alt="Bed" />
+                        <span>2 Beds</span>
+                      </div>
+                      <div class="popular-slide__label">
+                        <img src="images/slider/bath-icon.svg" alt="Bath" />
+                        <span>2 Bath</span>
+                      </div>
+                      <div class="popular-slide__label">
+                        <img src="images/slider/square-icon.svg" alt="Square" />
+                        <span>1236 Sqft.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-buttons">
+                <div
+                  class="popular-slider-btn popular-slider-prev swiper-button-prev"
+                ></div>
+                <div
+                  class="popular-slider-btn popular-slider-next swiper-button-next"
+                ></div>
+              </div>
+            </div>
+            <a href="#" class="popular__link">View All Properties</a>
+          </div>
+        </section>
+        <!-- ========== Why ========== -->
+        <section class="why section-reveal">
+          <div class="why__container">
+            <h2 class="title why__title">Why To Choose Us</h2>
+            <div class="why__body">
+              <div class="why__item item-why">
+                <div class="item-why__img">
+                  <svg
+                    width="72"
+                    height="72"
+                    viewBox="0 0 241 241"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M137.383 159.582L205.556 227.755"
+                      stroke="#1AA090"
+                      stroke-width="16"
+                    />
+                    <path
+                      d="M159.582 137.383L227.755 205.556"
+                      stroke="#1AA090"
+                      stroke-width="16"
+                    />
+                    <path
+                      d="M227.755 205.557C230.699 208.5 232.352 212.493 232.352 216.656C232.352 220.819 230.699 224.811 227.755 227.755"
+                      stroke="#1AA090"
+                      stroke-width="16"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M205.557 227.755C208.5 230.699 212.493 232.353 216.656 232.353C220.819 232.353 224.812 230.699 227.755 227.755"
+                      stroke="#1AA090"
+                      stroke-width="16"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M78.6355 7.99991C87.9115 7.99991 97.0967 9.82694 105.667 13.3767C114.236 16.9265 122.023 22.1295 128.582 28.6886C135.142 35.2477 140.345 43.0345 143.894 51.6044C147.444 60.1743 149.271 69.3595 149.271 78.6355C149.271 87.9114 147.444 97.0966 143.894 105.667C140.345 114.236 135.142 122.023 128.582 128.582C122.023 135.141 114.236 140.344 105.667 143.894C97.0967 147.444 87.9115 149.271 78.6355 149.271C59.9018 149.271 41.9354 141.829 28.6887 128.582C15.4419 115.336 8 97.3692 8 78.6355C8 69.3595 9.82704 60.1743 13.3768 51.6044C16.9266 43.0345 22.1296 35.2477 28.6887 28.6886C35.2478 22.1295 43.0346 16.9265 51.6045 13.3767C60.1744 9.82694 69.3596 7.99991 78.6355 7.99991Z"
+                      stroke="#1AA090"
+                      stroke-width="16"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M137.383 159.582L159.581 137.383"
+                      stroke="#1AA090"
+                      stroke-width="16"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M148.482 148.482L128.583 128.583"
+                      stroke="#1AA090"
+                      stroke-width="16"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M156.331 178.529L178.529 156.331"
+                      stroke="#1AA090"
+                      stroke-width="16"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M78.6357 39.3935C89.0434 39.3935 99.0247 43.528 106.384 50.8873C113.743 58.2465 117.878 68.2279 117.878 78.6355"
+                      stroke="#1AA090"
+                      stroke-width="16"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <h3 class="item-why__title">Easy To Find</h3>
+                <div class="item-why__text text">
+                  With over 1 million+ homes for sale available on the website,
+                  Rentiz can match you with a house you will want to call home.
+                </div>
+              </div>
+              <div class="why__item item-why">
+                <div class="item-why__img">
+                  <svg
+                    width="72"
+                    height="72"
+                    viewBox="0 0 72 72"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_2553_17)">
+                      <path
+                        d="M62.9998 25.8469V8.55C63.0024 7.72301 62.8416 6.90366 62.5267 6.13896C62.2118 5.37426 61.749 4.67929 61.1648 4.09393C60.5806 3.50857 59.8866 3.04435 59.1225 2.72792C58.3585 2.41149 57.5394 2.24907 56.7124 2.25H39.4254C38.2919 2.25234 37.205 2.70154 36.4006 3.50016L1.84056 38.0503C0.661868 39.2328 0 40.8343 0 42.5039C0 44.1735 0.661868 45.775 1.84056 46.9575L18.2937 63.4106C19.4757 64.5896 21.0771 65.2517 22.7466 65.2517C24.4161 65.2517 26.0174 64.5896 27.1995 63.4106L61.7496 28.8717C62.5485 28.0675 62.9978 26.9805 62.9998 25.8469V25.8469ZM49.4998 20.25C48.6098 20.25 47.7397 19.9861 46.9997 19.4916C46.2597 18.9972 45.6829 18.2943 45.3423 17.4721C45.0017 16.6498 44.9126 15.745 45.0863 14.8721C45.2599 13.9992 45.6885 13.1974 46.3178 12.568C46.9471 11.9387 47.749 11.5101 48.6219 11.3365C49.4948 11.1628 50.3996 11.252 51.2219 11.5925C52.0441 11.9331 52.7469 12.5099 53.2414 13.2499C53.7359 13.99 53.9998 14.86 53.9998 15.75C53.9998 16.9435 53.5257 18.0881 52.6818 18.932C51.8379 19.7759 50.6933 20.25 49.4998 20.25Z"
+                        fill="#1AA090"
+                      />
+                      <path
+                        d="M69.7502 9C69.1535 9 68.5812 9.23705 68.1592 9.65901C67.7373 10.081 67.5002 10.6533 67.5002 11.25V29.1614L30.7535 65.9095C30.5358 66.1164 30.3616 66.3647 30.2414 66.6399C30.1212 66.9151 30.0573 67.2116 30.0534 67.5119C30.0496 67.8122 30.1059 68.1103 30.219 68.3884C30.3322 68.6666 30.4999 68.9194 30.7122 69.1317C30.9246 69.3441 31.1773 69.5118 31.4555 69.6249C31.7337 69.7381 32.0317 69.7944 32.332 69.7905C32.6323 69.7867 32.9288 69.7228 33.204 69.6025C33.4792 69.4823 33.7276 69.3082 33.9344 69.0905L70.7782 32.2467C71.1701 31.853 71.4799 31.3853 71.6897 30.8709C71.8995 30.3565 72.005 29.8055 72.0002 29.25V11.25C72.0002 10.6533 71.7632 10.081 71.3412 9.65901C70.9192 9.23705 70.3469 9 69.7502 9V9Z"
+                        fill="#1AA090"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2553_17">
+                        <rect width="72" height="72" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <h3 class="item-why__title">Affordable Prices</h3>
+                <div class="item-why__text text">
+                  With 35+ filters and custom keyword search, Rentiz can help
+                  you easily find a home or apartment for rent that you'll love.
+                </div>
+              </div>
+              <div class="why__item item-why">
+                <div class="item-why__img">
+                  <svg
+                    width="72"
+                    height="72"
+                    viewBox="0 0 72 72"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M60.435 24.8099L65.124 20.1209L60.882 15.8789L55.758 20.9999C52.608 19.1099 48.936 17.9999 45 17.9999C33.423 17.9999 24 27.4199 24 38.9999C24 50.5799 33.423 59.9999 45 59.9999C56.577 59.9999 66 50.5799 66 38.9999C65.9976 33.738 64.0103 28.6706 60.435 24.8099ZM45 53.9999C36.729 53.9999 30 47.2709 30 38.9999C30 30.7289 36.729 23.9999 45 23.9999C53.271 23.9999 60 30.7289 60 38.9999C60 47.2709 53.271 53.9999 45 53.9999Z"
+                      fill="#1AA090"
+                    />
+                    <path
+                      d="M42 30H48V42H42V30ZM39 9H51V15H39V9ZM9 24H21V30H9V24ZM9 48H21V54H9V48ZM6 36H17.97V42H6V36Z"
+                      fill="#1AA090"
+                    />
+                  </svg>
+                </div>
+                <h3 class="item-why__title">Quickly Process</h3>
+                <div class="item-why__text text">
+                  Start gathering together documents that your agent will only
+                  need to confirm your identity and possibly employment status.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ========== Reviews ========== -->
+        <section class="reviews section-reveal">
+          <svg
+            class="reviews-pattern"
+            width="339"
+            height="1138"
+            viewBox="0 0 339 1138"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.47"
+              d="M-200.716 3L308.507 576.302L-187.777 1134.52L-727 561.221L-200.716 3Z"
+              stroke="#1AA090"
+              stroke-width="4"
+            />
+            <path
+              opacity="0.58"
+              d="M-281.716 3L227.507 576.302L-268.777 1134.52L-808 561.221L-281.716 3Z"
+              stroke="#1AA090"
+              stroke-width="4"
+            />
+            <path
+              opacity="0.9"
+              d="M-358.716 3L150.507 576.302L-345.777 1134.52L-885 561.221L-358.716 3Z"
+              stroke="#1AA090"
+              stroke-width="4"
+            />
+          </svg>
+
+          <div class="reviews__container">
+            <div class="reviews__quotes">“</div>
+            <div class="reviews__slider slider-reviews swiper">
+              <div class="swiper-wrapper">
+                <div class="slider-reviews__slide swiper-slide">
+                  <div class="slider-reviews__text">
+                    We were so fortunate to have found Rentiz when we moved to
+                    Louisville. Rentiz helped us find the right house in the
+                    right neighborhood for the right price. They were patient as
+                    we traveled from Ohio to look at homes over several months
+                    and cautioned us about making unreasonable offers when we
+                    fell too quickly for overpriced homes.
+                  </div>
+                  <div class="slider-reviews__info">
+                    <div class="slider-reviews__name">Natalie Harris</div>
+                    <div class="slider-reviews__job text">
+                      Manager, Louisville
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-reviews__slide swiper-slide">
+                  <div class="slider-reviews__text">
+                    I recently had the pleasure of working with Rentiz when
+                    looking for my home. From day 1, They were extremely
+                    responsive and had great suggestions for homes to view based
+                    on what I was looking for. If the time ever comes when I
+                    will be looking for a new home, there isn't any question on
+                    who my Realtor will be!
+                  </div>
+                  <div class="slider-reviews__info">
+                    <div class="slider-reviews__name">Corey Kline</div>
+                    <div class="slider-reviews__job text">
+                      Designer, Los-Angeles
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-reviews__slide swiper-slide">
+                  <div class="slider-reviews__text">
+                    We worked with Rentiz in the spring of 2015 to sell our
+                    home, and we couldn't have been more pleased! Rentiz was
+                    always available to answer our questions (and the buyers!).
+                    They were so responsive and is the sweetest person. We had a
+                    great experience!
+                  </div>
+                  <div class="slider-reviews__info">
+                    <div class="slider-reviews__name">Brandon Utley</div>
+                    <div class="slider-reviews__job text">Lawyer, Monreal</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-reviews__buttons">
+                <div
+                  class="slider-reviews-btn slider-reviews-prev swiper-button-prev"
+                >
+                  <svg
+                    width="23"
+                    height="38"
+                    viewBox="0 0 23 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.56705 38L23 19L4.56705 0L0 4.70755L13.8659 19L0 33.2924L4.56705 38Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="slider-reviews-btn slider-reviews-next swiper-button-next"
+                >
+                  <svg
+                    width="23"
+                    height="38"
+                    viewBox="0 0 23 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.56705 38L23 19L4.56705 0L0 4.70755L13.8659 19L0 33.2924L4.56705 38Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ========== Gallery ========== -->
+        <section class="gallery section-reveal">
+          <div class="gallery__container">
+            <div class="gallery__box">
+              <div class="gallery__item swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="images/photos/gallery-1.jpg"
+                      alt="Gallery Photo 1"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="images/photos/gallery-2.jpg"
+                      alt="Gallery Photo 2"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="images/photos/gallery-3.jpg"
+                      alt="Gallery Photo 3"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="images/photos/gallery-4.jpg"
+                      alt="Gallery Photo 4"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="images/photos/gallery-5.jpg"
+                      alt="Gallery Photo 5"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__item swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="images/photos/gallery-6.jpg"
+                      alt="Gallery Photo 6"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="images/photos/gallery-7.jpg"
+                      alt="Gallery Photo 7"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="images/photos/gallery-8.jpg"
+                      alt="Gallery Photo 8"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="images/photos/gallery-9.jpg"
+                      alt="Gallery Photo 9"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="images/photos/gallery-10.jpg"
+                      alt="Gallery Photo 10"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__info">
+              <h2 class="gallery__title title">
+                We Help People To Renovate Homes
+              </h2>
+              <div class="gallery__text text">
+                We have the expertise needed to manage every aspect of your home
+                prep and staging so you get the best result. Rentiz has
+                renovated more than 3,000 homes for sellers. Our in-house design
+                and construction teams will work with trusted vendors to make
+                your home look amazing, online and in person.
+              </div>
+              <a href="#" class="gallery__link link">Get In Touch</a>
+            </div>
+          </div>
+        </section>
+        <!-- ========== Begin ========== -->
+        <section class="begin section-reveal">
+          <svg
+            class="begin-wave"
+            width="352"
+            height="617"
+            viewBox="0 0 352 617"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.58"
+              d="M-104 48C-3.02255 72.5207 219.946 210.45 304 566"
+              stroke="#1AA090"
+              stroke-width="3"
+            />
+            <path
+              opacity="0.47"
+              d="M-58 2C42.9774 26.5207 265.946 164.45 350 520"
+              stroke="#1AA090"
+              stroke-width="3"
+            />
+            <path
+              opacity="0.9"
+              d="M-148 98C-47.0226 122.521 189.5 282 251.5 616"
+              stroke="#1AA090"
+              stroke-width="3"
+            />
+          </svg>
+          <svg
+            class="begin-rect"
+            width="75"
+            height="182"
+            viewBox="0 0 75 182"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="3.5"
+              y="3.5"
+              width="83"
+              height="95"
+              fill="#1AA090"
+              stroke="#121B25"
+              stroke-width="7"
+            />
+            <rect
+              x="25.5"
+              y="43.5"
+              width="83"
+              height="95"
+              fill="#1AA090"
+              stroke="#121B25"
+              stroke-width="7"
+            />
+            <rect
+              x="47.5"
+              y="83.5"
+              width="83"
+              height="95"
+              fill="#1AA090"
+              stroke="#121B25"
+              stroke-width="7"
+            />
+          </svg>
+          <div class="begin__container">
+            <h3 class="begin__tagline">Let’s simply begin with rentiz.</h3>
+            <div class="begin__content">
+              <div class="begin__text text">
+                Get notified when the perfect home hits the market, and book a
+                tour to see it in person. Tour one home or 100—your local Rentiz
+                Agent will guide you through the process to get you to the right
+                one.
+              </div>
+              <a href="#" class="begin__link link">Get Started</a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- ========== Footer ========== -->
+      <footer class="footer">
+        <div class="footer__main">
+          <div class="main-footer__container">
+            <div class="footer__block">
+              <a href="#" class="footer__link"
+                ><img src="images/logos/logo.svg" alt="Rentiz Logo"
+              /></a>
+              <div class="footer__text text">
+                Updated September 2022: By using, you agree to the
+                <a href="#">Terms of Use</a>, and
+                <a href="#">Privacy Policy</a>.
+              </div>
+              <div class="footer__socials">
+                <a href="#" class="footer__social">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.999 0C4.477 0 0 4.477 0 9.999C0 14.989 3.656 19.125 8.437 19.878V12.89H5.897V9.999H8.437V7.796C8.437 5.288 9.93 3.905 12.213 3.905C13.307 3.905 14.453 4.1 14.453 4.1V6.559H13.189C11.949 6.559 11.561 7.331 11.561 8.122V9.997H14.332L13.889 12.888H11.561V19.876C16.342 19.127 19.998 14.99 19.998 9.999C19.998 4.477 15.521 0 9.999 0Z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="footer__social">
+                  <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.997 4.372C6.443 4.372 4.374 6.442 4.374 8.995C4.374 11.549 6.443 13.619 8.997 13.619C11.549 13.619 13.62 11.549 13.62 8.995C13.62 6.442 11.549 4.372 8.997 4.372ZM8.997 11.999C7.338 11.999 5.993 10.654 5.993 8.996C5.993 7.337 7.338 5.993 8.997 5.993C10.656 5.993 11.999 7.337 11.999 8.996C11.999 10.654 10.656 11.999 8.997 11.999Z"
+                    />
+                    <path
+                      d="M13.804 5.28C14.3994 5.28 14.882 4.79736 14.882 4.202C14.882 3.60664 14.3994 3.124 13.804 3.124C13.2086 3.124 12.726 3.60664 12.726 4.202C12.726 4.79736 13.2086 5.28 13.804 5.28Z"
+                    />
+                    <path
+                      d="M17.531 3.106C17.062 1.897 16.107 0.941 14.898 0.474C14.199 0.211 13.46 0.0699999 12.712 0.0539999C11.749 0.0119999 11.444 0 9.002 0C6.56 0 6.247 -1.00583e-07 5.292 0.0539999C4.546 0.0689999 3.807 0.21 3.108 0.474C1.898 0.941 0.943 1.897 0.475 3.106C0.212 3.806 0.071 4.544 0.056 5.292C0.013 6.254 0 6.559 0 9.002C0 11.444 -7.45058e-09 11.755 0.056 12.712C0.071 13.46 0.212 14.198 0.475 14.899C0.944 16.107 1.899 17.063 3.109 17.531C3.805 17.803 4.544 17.957 5.294 17.981C6.257 18.023 6.562 18.036 9.004 18.036C11.446 18.036 11.759 18.036 12.714 17.981C13.461 17.966 14.2 17.824 14.9 17.562C16.109 17.093 17.064 16.138 17.533 14.929C17.796 14.229 17.937 13.491 17.952 12.743C17.995 11.781 18.008 11.476 18.008 9.033C18.008 6.59 18.008 6.28 17.952 5.323C17.939 4.565 17.799 3.814 17.531 3.106ZM16.313 12.638C16.306 13.214 16.202 13.785 16.002 14.326C15.697 15.113 15.076 15.735 14.29 16.037C13.755 16.236 13.191 16.34 12.62 16.348C11.67 16.392 11.402 16.403 8.966 16.403C6.528 16.403 6.279 16.403 5.311 16.348C4.742 16.341 4.176 16.236 3.642 16.037C2.853 15.736 2.228 15.114 1.923 14.326C1.727 13.792 1.621 13.227 1.612 12.657C1.569 11.707 1.559 11.439 1.559 9.003C1.559 6.566 1.559 6.317 1.612 5.348C1.619 4.772 1.723 4.202 1.923 3.661C2.228 2.872 2.853 2.251 3.642 1.949C4.176 1.751 4.742 1.646 5.311 1.638C6.262 1.595 6.529 1.583 8.966 1.583C11.403 1.583 11.653 1.583 12.62 1.638C13.191 1.645 13.755 1.75 14.29 1.949C15.076 2.252 15.697 2.874 16.002 3.661C16.198 4.195 16.304 4.76 16.313 5.33C16.356 6.281 16.367 6.548 16.367 8.985C16.367 11.421 16.367 11.683 16.324 12.639H16.313V12.638Z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="footer__social">
+                  <svg
+                    width="22"
+                    height="17"
+                    viewBox="0 0 22 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M21.4572 2.01238C20.6876 2.35373 19.8604 2.58442
+                    18.9924 2.68815C19.8783 2.15701 20.5589 1.31598 20.8793
+                    0.31378C20.05 0.80564 19.1316 1.16278 18.154 1.3552C17.3712
+                    0.52112 16.2559 0 15.0215 0C12.6514 0 10.7297 1.92147
+                    10.7297 4.29155C10.7297 4.6279 10.7677 4.95546 10.8409
+                    5.2696C7.27414 5.0906 4.1118 3.38203 1.99514 0.78551C1.6257
+                    1.41935 1.41406 2.15656 1.41406 2.94309C1.41406 4.43204
+                    2.17169 5.74563 3.32328 6.5153C2.61984 6.4929 1.95801 6.2999
+                    1.37944 5.97846C1.37903 5.99639 1.37903 6.0143 1.37903
+                    6.0324C1.37903 8.1118 2.85838 9.8463 4.82164 10.2406C4.46154
+                    10.3387 4.08239 10.3912 3.69099 10.3912C3.41445 10.3912
+                    3.1456 10.3642 2.88351 10.3142C3.42966 12.0191 5.01458 13.26
+                    6.89259 13.2945C5.42381 14.4457 3.57332 15.1318 1.56258
+                    15.1318C1.21617 15.1318 0.874558 15.1114 0.538818
+                    15.0717C2.43808 16.2894 4.69396 17 7.11755 17C15.0114 17
+                    19.3282 10.4605 19.3282 4.78918C19.3282 4.60314 19.324
+                    4.41805 19.3157 4.23395C20.1543 3.62886 20.8819 2.87302
+                    21.4572 2.01238Z""/>
+                  </svg>
+                </a>
+                <a href="#" class="footer__social">
+                  <svg
+                    width="21"
+                    height="15"
+                    viewBox="0 0 21 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M20.5911 2.20301C20.3611 1.34501 19.6861 0.668007
+                    18.8291 0.437007C17.2631 0.00700739 10.9981 7.5965e-06
+                    10.9981 7.5965e-06C10.9981 7.5965e-06 4.73413 -0.00699261
+                    3.16713 0.404007C2.32713 0.633007 1.63313 1.32501 1.40113
+                    2.18201C0.988133 3.74801 0.984132 6.99601 0.984132
+                    6.99601C0.984132 6.99601 0.980132 10.26 1.39013
+                    11.81C1.62013 12.667 2.29513 13.344 3.15313 13.575C4.73513
+                    14.005 10.9831 14.012 10.9831 14.012C10.9831 14.012 17.2481
+                    14.019 18.8141 13.609C19.6701 13.379 20.3481 12.703 20.5811
+                    11.846C20.9951 10.281 20.9981 7.03401 20.9981
+                    7.03401C20.9981 7.03401 21.0181 3.76901 20.5911
+                    2.20301ZM8.99413 10.005L8.99913 4.00501L14.2061
+                    7.01001L8.99413 10.005Z""/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="footer__block links-footer">
+              <h4 class="links-footer__header">Project</h4>
+              <ul class="links-footer__list">
+                <li class="links-footer__item">
+                  <a href="#" class="links-footer__link text">Houses</a>
+                </li>
+                <li class="links-footer__item">
+                  <a href="#" class="links-footer__link text">Rooms</a>
+                </li>
+                <li class="links-footer__item">
+                  <a href="#" class="links-footer__link text">Flats</a>
+                </li>
+                <li class="links-footer__item">
+                  <a href="#" class="links-footer__link text">Appartments</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__block links-footer">
+              <h4 class="links-footer__header">Company</h4>
+              <ul class="links-footer__list">
+                <li class="links-footer__item">
+                  <a href="#" class="links-footer__link text">How we work</a>
+                </li>
+                <li class="links-footer__item">
+                  <a href="#" class="links-footer__link text">Capital</a>
+                </li>
+                <li class="links-footer__item">
+                  <a href="#" class="links-footer__link text">Security</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__block links-footer">
+              <h4 class="links-footer__header">Movement</h4>
+              <ul class="links-footer__list">
+                <li class="links-footer__item">
+                  <a href="#" class="links-footer__link text">Who are we</a>
+                </li>
+                <li class="links-footer__item">
+                  <a href="#" class="links-footer__link text">Support us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__block links-footer">
+              <h4 class="links-footer__header">Help</h4>
+              <ul class="links-footer__list">
+                <li class="links-footer__item">
+                  <a href="#" class="links-footer__link text">Privacy</a>
+                </li>
+                <li class="links-footer__item">
+                  <a href="#" class="links-footer__link text">Condition</a>
+                </li>
+                <li class="links-footer__item">
+                  <a href="#" class="links-footer__link text">Blog</a>
+                </li>
+                <li class="links-footer__item">
+                  <a href="#" class="links-footer__link text">FAQs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copy">
+          <div class="copy__container">
+            <span class="text">Copyright ©Rentiz 2022. All rights reserved</span
+            ><span class="text"
+              >Made by:
+              <a href="https://github.com/Aleksey-Mazur" target="_blank"
+                >Aleksey Mazur</a
+              ></span
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
