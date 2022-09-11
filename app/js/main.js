@@ -29,7 +29,7 @@ if (filter) {
   });
 }
 
-// Slider
+// Popular slider
 const popularSlider = new Swiper('.popular-slider', {
   slidesPerView: 1,
   spaceBetween: 20,
@@ -37,6 +37,11 @@ const popularSlider = new Swiper('.popular-slider', {
   navigation: {
     nextEl: '.popular-slider-next',
     prevEl: '.popular-slider-prev',
+  },
+
+  mousewheel: {
+    sensitivity: 1,
+    eventsTarget: '.popular-slider',
   },
 
   breakpoints: {
@@ -75,3 +80,23 @@ if (galleryItems.length > 0) {
     });
   });
 }
+
+// Revealing elements on scroll
+const allRevealSections = document.querySelectorAll('.section-reveal');
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove('section-hidden');
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+
+allRevealSections.forEach(section => {
+  sectionObserver.observe(section);
+  section.classList.add('section-hidden');
+});
