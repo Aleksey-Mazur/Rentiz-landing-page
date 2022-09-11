@@ -32,22 +32,13 @@
     top: 0;
     left: 0;
   }
-
-  &__slider {
-  }
 }
 
 .slider-reviews {
-  &__slide {
-  }
-
   &__text {
     font-size: clamp(1.25rem, 1.032rem + 1.09vw, 2rem);
     line-height: 1.57;
     margin-bottom: 2.5rem;
-  }
-
-  &__info {
   }
 
   &__name {
@@ -58,9 +49,6 @@
     text-transform: capitalize;
   }
 
-  &__job {
-  }
-
   &__buttons {
     display: flex;
     gap: 4.3rem;
@@ -69,6 +57,11 @@
     bottom: 0;
     right: 1rem;
     align-items: center;
+
+    @media (max-width: 360px) {
+      gap: 2.3rem;
+      width: 5rem;
+    }
 
     &:before {
       content: '';
@@ -96,7 +89,4 @@
 
 .slider-reviews-prev {
   transform: translateY(-4px) rotate(180deg);
-}
-
-.slider-reviews-next {
 }

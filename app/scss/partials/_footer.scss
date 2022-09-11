@@ -34,9 +34,6 @@
     }
   }
 
-  &__link {
-  }
-
   &__text {
     margin: 1.38rem 0 2rem;
 
@@ -72,9 +69,6 @@
     }
   }
 
-  &__copy {
-  }
-
   .copy__container {
     display: flex;
     justify-content: space-between;
@@ -98,12 +92,6 @@
     margin-bottom: 0.7rem;
   }
 
-  &__list {
-  }
-
-  &__item {
-  }
-
   &__link {
     white-space: nowrap;
     transition: color 0.2s;
@@ -115,7 +103,8 @@
   }
 }
 
-.copy__container > span > a {
+.copy__container > span > a,
+.footer__text > a {
   color: $textColor;
   text-decoration: underline;
   transition: all 0.3s;

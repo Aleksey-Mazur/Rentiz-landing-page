@@ -79,6 +79,7 @@
 
   @media (max-width: 576px) {
     grid-template-columns: repeat(3, 1fr);
+    padding: 0.6rem;
   }
 
   &__block {
