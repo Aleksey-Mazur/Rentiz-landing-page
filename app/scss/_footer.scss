@@ -1,0 +1,129 @@
+.footer {
+  background-color: #1a242f;
+
+  &__main {
+    padding-top: clamp(3rem, 1.327rem + 8.36vw, 8.75rem);
+    padding-bottom: clamp(2rem, 0.873rem + 5.64vw, 5.875rem);
+    border-bottom: 1px solid #303a44;
+  }
+
+  .main-footer__container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: clamp(2rem, -14.071rem + 25.71vw, 8.75rem);
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__block {
+    @media (max-width: 992px) {
+      grid-column: 1/5;
+      &:not(:first-child) {
+        grid-row: 2/3;
+        grid-column: auto;
+      }
+    }
+  }
+
+  &__link {
+  }
+
+  &__text {
+    margin: 1.38rem 0 2rem;
+
+    @media (min-width: 992px) {
+      width: 21.25rem;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    @media (max-width: 600px) {
+      justify-content: center;
+    }
+  }
+
+  &__social {
+    height: 1.2rem;
+
+    svg {
+      fill: #555e68;
+      height: 100%;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  &__copy {
+  }
+
+  .copy__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 1rem;
+
+    @media (max-width: 700px) {
+      flex-direction: column;
+      gap: 1.2rem;
+      text-align: center;
+    }
+  }
+}
+
+.links-footer {
+  &__header {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.26;
+    letter-spacing: 0.01rem;
+    margin-bottom: 0.7rem;
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__link {
+    white-space: nowrap;
+    transition: color 0.2s;
+    @media (any-hover: hover) {
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.copy__container > span > a {
+  color: $textColor;
+  text-decoration: underline;
+  transition: all 0.3s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

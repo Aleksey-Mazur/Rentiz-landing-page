@@ -1,0 +1,57 @@
+.begin {
+  position: relative;
+  padding: clamp(3rem, 0.6rem + 12vw, 11.25rem) 0;
+
+  &__container {
+    max-width: 77.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 400px) {
+      text-align: center;
+    }
+  }
+
+  &__tagline {
+    max-width: 32rem;
+    font-weight: 600;
+    font-size: clamp(2rem, 1.345rem + 3.27vw, 4.25rem);
+    line-height: 1.26;
+    text-transform: capitalize;
+  }
+
+  &__content {
+    flex: 0 0 50%;
+  }
+
+  &__text {
+    margin-bottom: 2.8rem;
+  }
+}
+
+.begin-wave {
+  position: absolute;
+  left: 0;
+  bottom: -50%;
+  z-index: -1;
+
+  @media (max-width: 460px) {
+    width: 18.75rem;
+  }
+}
+
+.begin-rect {
+  position: absolute;
+  top: -12%;
+  right: 0;
+
+  @media (max-width: 400px) {
+    display: none;
+  }
+}

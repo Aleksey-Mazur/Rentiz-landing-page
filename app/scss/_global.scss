@@ -47,3 +47,20 @@ body {
   line-height: 1.7;
   color: $textColor;
 }
+
+.link {
+  display: inline-block;
+  padding: 1.38rem 2.6rem;
+  background-color: $accentColor;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #fff;
+  transition: background-color 0.3s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #15786c;
+    }
+  }
+}
